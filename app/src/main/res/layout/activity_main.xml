@@ -37,14 +37,17 @@
         android:orientation="horizontal">
         <Button
             android:id="@+id/buttonPlus"
+            android:text="@string/plus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <Button
             android:id="@+id/buttonMinus"
+            android:text="@string/minus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <Button
             android:id="@+id/buttonMultiplication"
+            android:text="@string/multiplication"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </LinearLayout>
@@ -55,14 +58,17 @@
             android:orientation="horizontal">
             <Button
                 android:id="@+id/buttonDivision"
+                android:text="@string/division"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <Button
                 android:id="@+id/buttonRoot"
+                android:text="@string/root"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <Button
                 android:id="@+id/buttonPercent"
+                android:text="@string/percent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
@@ -73,14 +79,17 @@
             android:orientation="horizontal">
             <Button
                 android:id="@+id/buttonPhytagoras"
+                android:text="@string/phytagoras"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <Button
                 android:id="@+id/buttonCircleArea"
+                android:text="@string/circleArea"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <Button
                 android:id="@+id/buttonCylinderVolume"
+                android:text="@string/cylinderVolume"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
