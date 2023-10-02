@@ -5,4 +5,7 @@
     <dimen name="buttonHeight">60dp</dimen>
     <dimen name="buttonText">12sp</dimen>
     <dimen name="titleText">24sp</dimen>
+    <dimen name="textanswer_height">50dp</dimen>
+    <dimen name="textanswer_margintop">50dp</dimen>
+    <dimen name="textsize_answer">40sp</dimen>
 </resources>
