@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+// Ibrahim, Katja, Goran, Alex, Dennis
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -12,3 +14,4 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 }
+
