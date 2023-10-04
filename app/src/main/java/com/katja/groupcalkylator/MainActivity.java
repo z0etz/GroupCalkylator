@@ -3,6 +3,7 @@ package com.katja.groupcalkylator;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -39,6 +40,26 @@ public class MainActivity extends AppCompatActivity {
         buttonCircleArea = findViewById(R.id.buttonCircleArea);
         buttonCylinderVolume = findViewById(R.id.buttonCylinderVolume);
         textAnswer = findViewById(R.id.textAnswer);
+
+        // Set an OnClickListeners for Buttons
+        buttonPlus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Check input, count and show BMI when the button is clicked
+                String sX = editText0.getText().toString();
+                String sY = editText1.getText().toString();
+                try {
+                    float fX = Float.parseFloat(sX);
+                    float fY = Float.parseFloat(sY);
+                    float fSvar = 100; // Byt ut 100 mot träkning här!
+                    textAnswer.setText(String.valueOf(fSvar));
+                }
+                catch (NumberFormatException e) {
+                    String error = getString(R.string.error);
+                    textAnswer.setText(error);
+                }
+            }
+        });
     }
 }
 
