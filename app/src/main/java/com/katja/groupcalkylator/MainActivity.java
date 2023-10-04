@@ -119,7 +119,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Check input, count and show answer when the button is clicked
                 String sX = editText0.getText().toString();
-                String sY = editText1.getText().toString();
                 try {
                     float fX = Float.parseFloat(sX);
                     float fSvar = 100; //Byt ut 100 mot uträkning här
@@ -175,7 +174,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Check input, count and show answer when the button is clicked
                 String sX = editText0.getText().toString();
-                String sY = editText1.getText().toString();
                 try {
                     float fX = Float.parseFloat(sX);
                     float fSvar = 100; //Byt ut 100 mot uträkning här
