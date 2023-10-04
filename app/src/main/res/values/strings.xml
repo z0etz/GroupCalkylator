@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">GroupCalkylator</string>
+    <string name="minus">X - Y</string>
+    <string name="plus">X + Y</string>
+    <string name="multiplication">X * Y</string>
+    <string name="division">X / Y</string>
+    <string name="root">√ X</string>
+    <string name="percent">X % Y</string>
+    <string name="phytagoras">X² + Y²</string>
+    <string name="circleArea">◯ dim ➙ A</string>
+    <string name="cylinderVolume">◯ dim ➙ Vol</string>
+    <string name="x">X</string>
+    <string name="y">Y</string>
+    <string name="kalkylator">Kalkylator</string>
 </resources>
