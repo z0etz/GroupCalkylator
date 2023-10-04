@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     float fX = Float.parseFloat(sX);
                     float fY = Float.parseFloat(sY);
-                    float fSvar = 100; // Byt ut 100 mot träkning här!
+                    float fSvar = fX + fY;
                     textAnswer.setText(String.valueOf(fSvar));
                 }
                 catch (NumberFormatException e) {
