@@ -10,10 +10,6 @@ import android.widget.TextView;
 
 
 // Ibrahim, Katja, Goran, Alex, Dennis
-// Ja, visst är vi bara 5 i gruppen och inte 6?
-//TestGoran
-
-// Ibrahim, Katja, Goran, Alex, Dennis
 
 public class MainActivity extends AppCompatActivity {
 
