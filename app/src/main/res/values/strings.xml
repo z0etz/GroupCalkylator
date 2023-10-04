@@ -10,6 +10,5 @@
     <string name="circleArea">X⊘ ➙ A</string>
     <string name="cylinderVolume">X⊘, Yh ➙ Vol</string>
     <string name="x">X</string>
-    <string name="y">Y (används ej för roten ur & cirkel-area)</string>
-    <string name="kalkylator">Kalkylator</string>
+    <string name="y">Y (används ej för roten ur / cirkel-area)</string>
 </resources>
