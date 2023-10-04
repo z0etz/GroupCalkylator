@@ -12,7 +12,7 @@ import android.widget.TextView;
 // Ibrahim, Katja, Goran, Alex, Dennis
 
 public class MainActivity extends AppCompatActivity {
-
+//Defines all elements
     EditText editText0, editText1;
     Button buttonPlus, buttonMinus, buttonMultiplication,
             buttonDivision, buttonRoot, buttonPercent, buttonPhytagoras, buttonCircleArea,
@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Finding Id for every element
 
         editText0 = findViewById(R.id.editText0);
         editText1 = findViewById(R.id.editText1);
@@ -37,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         buttonCylinderVolume = findViewById(R.id.buttonCylinderVolume);
         textAnswer = findViewById(R.id.textAnswer);
 
+
         // Set an OnClickListeners for Buttons
         buttonPlus.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,8 +52,7 @@ public class MainActivity extends AppCompatActivity {
                     float fY = Float.parseFloat(sY);
                     float fSvar = fX + fY;
                     textAnswer.setText(String.valueOf(fSvar));
-                }
-                catch (NumberFormatException e) {
+                } catch (NumberFormatException e) {
                     String error = getString(R.string.error);
                     textAnswer.setText(error);
                 }
@@ -68,8 +70,7 @@ public class MainActivity extends AppCompatActivity {
                     float fY = Float.parseFloat(sY);
                     float fSvar = fX - fY;
                     textAnswer.setText(String.valueOf(fSvar));
-                }
-                catch (NumberFormatException e) {
+                } catch (NumberFormatException e) {
                     String error = getString(R.string.error);
                     textAnswer.setText(error);
                 }
@@ -87,8 +88,7 @@ public class MainActivity extends AppCompatActivity {
                     float fY = Float.parseFloat(sY);
                     float fSvar = fX * fY;
                     textAnswer.setText(String.valueOf(fSvar));
-                }
-                catch (NumberFormatException e) {
+                } catch (NumberFormatException e) {
                     String error = getString(R.string.error);
                     textAnswer.setText(error);
                 }
@@ -106,8 +106,7 @@ public class MainActivity extends AppCompatActivity {
                     float fY = Float.parseFloat(sY);
                     float fSvar = fX / fY;
                     textAnswer.setText(String.valueOf(fSvar));
-                }
-                catch (NumberFormatException e) {
+                } catch (NumberFormatException e) {
                     String error = getString(R.string.error);
                     textAnswer.setText(error);
                 }
@@ -122,10 +121,9 @@ public class MainActivity extends AppCompatActivity {
                 String sY = editText1.getText().toString();
                 try {
                     float fX = Float.parseFloat(sX);
-                    float fSvar = (float) Math.sqrt (fX);
+                    float fSvar = (float) Math.sqrt(fX);
                     textAnswer.setText(String.valueOf(fSvar));
-                }
-                catch (NumberFormatException e) {
+                } catch (NumberFormatException e) {
                     String error = getString(R.string.error);
                     textAnswer.setText(error);
                 }
@@ -143,8 +141,7 @@ public class MainActivity extends AppCompatActivity {
                     float fY = Float.parseFloat(sY);
                     float fSvar = (float) (fX * 0.01 * fY);
                     textAnswer.setText(String.valueOf(fSvar));
-                }
-                catch (NumberFormatException e) {
+                } catch (NumberFormatException e) {
                     String error = getString(R.string.error);
                     textAnswer.setText(error);
                 }
@@ -160,10 +157,9 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     float fX = Float.parseFloat(sX);
                     float fY = Float.parseFloat(sY);
-                    float fSvar = (float) Math.sqrt (fX * fX + fY * fY);
+                    float fSvar = (float) Math.sqrt(fX * fX + fY * fY);
                     textAnswer.setText(String.valueOf(fSvar));
-                }
-                catch (NumberFormatException e) {
+                } catch (NumberFormatException e) {
                     String error = getString(R.string.error);
                     textAnswer.setText(error);
                 }
@@ -178,10 +174,9 @@ public class MainActivity extends AppCompatActivity {
                 String sY = editText1.getText().toString();
                 try {
                     float fX = Float.parseFloat(sX);
-                    float fSvar =  (float) (Math.PI * (fX/2) * (fX/2));
+                    float fSvar = (float) (Math.PI * (fX / 2) * (fX / 2));
                     textAnswer.setText(String.valueOf(fSvar));
-                }
-                catch (NumberFormatException e) {
+                } catch (NumberFormatException e) {
                     String error = getString(R.string.error);
                     textAnswer.setText(error);
                 }
@@ -197,89 +192,13 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     float fX = Float.parseFloat(sX);
                     float fY = Float.parseFloat(sY);
-                    float fSvar = (float) (Math.PI * (fX/2)* (fX/2) * fY);
+                    float fSvar = (float) (Math.PI * (fX / 2) * (fX / 2) * fY);
                     textAnswer.setText(String.valueOf(fSvar));
-                }
-                catch (NumberFormatException e) {
+                } catch (NumberFormatException e) {
                     String error = getString(R.string.error);
                     textAnswer.setText(error);
                 }
             }
         });
-    //    private void calculate() {
-        //       String input1Str = editText0.getText().toString();
-        //      String input2Str = editText1.getText().toString();
-
-        //        if (input1Str.isEmpty() || input2Str.isEmpty()) {
-        //          textAnswer.setText("Fyll i båda fälten.");
-        //         return;
-        //      }
-
-        //    try {
-        //      double input1 = Double.parseDouble(input1Str);
-        //        double input2 = Double.parseDouble(input2Str);
-        //       double result = 0;
-
-        //       String operator = operatorSpinner.getSelectedItem().toString(); // Lägg till en spinner för att välja operation
-
-        //      switch (operator) {
-        //          case "Addition":
-        //              result = input1 + input2;
-        //              break;
-        //          case "Subtraktion":
-        //              result = input1 - input2;
-        //             break;
-        //         case "Division":
-        //            if (input2 != 0) {
-        //              result = input1 / input2;
-        //             } else {
-        //                textAnswer.setText("Kan inte dividera med noll.");
-        //              return;
-                        }
-    //         break;
-    //        case "multiplication":
-    //         result = input1 * input2;
-    //          break;
-    //     case "root":
-    //           if (input2 >= 0) {
-    //                result = Math.sqrt(input2);
-    //             } else {
-        //                textAnswer.setText("Kan inte ta roten ur ett negativt tal.");
-    //                return;
-    //             }
-//              break;
-    //            case "Procent":
-                            //               result = (input1 * input2) / 100;
-    //              break;
-    //          case "Pythagoras sats":
-    //                 result = Math.sqrt((input1 * input1) + (input2 * input2));
-    //                  break;
-    //              case "Cirkelns area":
-    //                  result = Math.PI * input1 * input1;
-    //                  break;
-    //              case "Cylinderns volym":
-    //                  result = Math.PI * input1 * input1 * input2;
-    //                  break;
-    //              default:
-    //                   textAnswer.setText("Ogiltig operation vald.");
-    //                  return;
-                }
-
-                // Visa resultatet
-//       textAnswer.setText("Resultat: " + result);
-//      } catch (NumberFormatException e) {
-//          textAnswer.setText("Felaktig inmatning. Ange giltiga nummer.");
-//           }
-//       }
-
-//   }
-
-
-//}
-
-
-
-
-// }
-//}
-
+    }
+}
