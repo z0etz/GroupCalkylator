@@ -7,7 +7,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.groupcalkylator.R;
 
 // Ibrahim, Katja, Goran, Alex, Dennis
 // Ja, visst är vi bara 5 i gruppen och inte 6?
