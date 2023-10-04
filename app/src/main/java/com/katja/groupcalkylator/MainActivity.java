@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         buttonPlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Check input, count and show BMI when the button is clicked
+                // Check input, count and show answer when the button is clicked
                 String sX = editText0.getText().toString();
                 String sY = editText1.getText().toString();
                 try {
@@ -56,6 +56,160 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        buttonMinus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Check input, count and show answer when the button is clicked
+                String sX = editText0.getText().toString();
+                String sY = editText1.getText().toString();
+                try {
+                    float fX = Float.parseFloat(sX);
+                    float fY = Float.parseFloat(sY);
+                    float fSvar = fX - fY;
+                    textAnswer.setText(String.valueOf(fSvar));
+                }
+                catch (NumberFormatException e) {
+                    String error = getString(R.string.error);
+                    textAnswer.setText(error);
+                }
+            }
+        });
+
+        buttonMultiplication.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Check input, count and show answer when the button is clicked
+                String sX = editText0.getText().toString();
+                String sY = editText1.getText().toString();
+                try {
+                    float fX = Float.parseFloat(sX);
+                    float fY = Float.parseFloat(sY);
+                    float fSvar = fX * fY;
+                    textAnswer.setText(String.valueOf(fSvar));
+                }
+                catch (NumberFormatException e) {
+                    String error = getString(R.string.error);
+                    textAnswer.setText(error);
+                }
+            }
+        });
+
+        buttonDivision.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Check input, count and show answer when the button is clicked
+                String sX = editText0.getText().toString();
+                String sY = editText1.getText().toString();
+                try {
+                    float fX = Float.parseFloat(sX);
+                    float fY = Float.parseFloat(sY);
+                    float fSvar = fX / fY;
+                    textAnswer.setText(String.valueOf(fSvar));
+                }
+                catch (NumberFormatException e) {
+                    String error = getString(R.string.error);
+                    textAnswer.setText(error);
+                }
+            }
+        });
+
+        buttonRoot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Check input, count and show answer when the button is clicked
+                String sX = editText0.getText().toString();
+                String sY = editText1.getText().toString();
+                try {
+                    float fX = Float.parseFloat(sX);
+                    float fY = Float.parseFloat(sY);
+                    float fSvar = 100; //Byt ut 100 mot uträkning här
+                    textAnswer.setText(String.valueOf(fSvar));
+                }
+                catch (NumberFormatException e) {
+                    String error = getString(R.string.error);
+                    textAnswer.setText(error);
+                }
+            }
+        });
+
+        buttonPercent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Check input, count and show answer when the button is clicked
+                String sX = editText0.getText().toString();
+                String sY = editText1.getText().toString();
+                try {
+                    float fX = Float.parseFloat(sX);
+                    float fY = Float.parseFloat(sY);
+                    float fSvar = 100; //Byt ut 100 mot uträkning här
+                    textAnswer.setText(String.valueOf(fSvar));
+                }
+                catch (NumberFormatException e) {
+                    String error = getString(R.string.error);
+                    textAnswer.setText(error);
+                }
+            }
+        });
+
+        buttonPhytagoras.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Check input, count and show answer when the button is clicked
+                String sX = editText0.getText().toString();
+                String sY = editText1.getText().toString();
+                try {
+                    float fX = Float.parseFloat(sX);
+                    float fY = Float.parseFloat(sY);
+                    float fSvar = 100; //Byt ut 100 mot uträkning här
+                    textAnswer.setText(String.valueOf(fSvar));
+                }
+                catch (NumberFormatException e) {
+                    String error = getString(R.string.error);
+                    textAnswer.setText(error);
+                }
+            }
+        });
+
+        buttonCircleArea.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Check input, count and show answer when the button is clicked
+                String sX = editText0.getText().toString();
+                String sY = editText1.getText().toString();
+                try {
+                    float fX = Float.parseFloat(sX);
+                    float fY = Float.parseFloat(sY);
+                    float fSvar = 100; //Byt ut 100 mot uträkning här
+                    textAnswer.setText(String.valueOf(fSvar));
+                }
+                catch (NumberFormatException e) {
+                    String error = getString(R.string.error);
+                    textAnswer.setText(error);
+                }
+            }
+        });
+
+        buttonCylinderVolume.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Check input, count and show answer when the button is clicked
+                String sX = editText0.getText().toString();
+                String sY = editText1.getText().toString();
+                try {
+                    float fX = Float.parseFloat(sX);
+                    float fY = Float.parseFloat(sY);
+                    float fSvar = 100; //Byt ut 100 mot uträkning här
+                    textAnswer.setText(String.valueOf(fSvar));
+                }
+                catch (NumberFormatException e) {
+                    String error = getString(R.string.error);
+                    textAnswer.setText(error);
+                }
+            }
+        });
+
+
     }
 }
 
