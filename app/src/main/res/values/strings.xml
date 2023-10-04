@@ -9,7 +9,5 @@
     <string name="phytagoras">X² + Y²</string>
     <string name="circleArea">◯ dim ➙ A</string>
     <string name="cylinderVolume">◯ dim ➙ Vol</string>
-    <string name="x">X</string>
-    <string name="y">Y</string>
     <string name="kalkylator">Kalkylator</string>
 </resources>
