@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
                 String sY = editText1.getText().toString();
                 try {
                     float fX = Float.parseFloat(sX);
-                    float fSvar = 100; //Byt ut 100 mot uträkning här
+                    float fSvar = (float) Math.sqrt (fX);
                     textAnswer.setText(String.valueOf(fSvar));
                 }
                 catch (NumberFormatException e) {
@@ -141,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     float fX = Float.parseFloat(sX);
                     float fY = Float.parseFloat(sY);
-                    float fSvar = 100; //Byt ut 100 mot uträkning här
+                    float fSvar = (float) (fX * 0.01 * fY);
                     textAnswer.setText(String.valueOf(fSvar));
                 }
                 catch (NumberFormatException e) {
@@ -160,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     float fX = Float.parseFloat(sX);
                     float fY = Float.parseFloat(sY);
-                    float fSvar = 100; //Byt ut 100 mot uträkning här
+                    float fSvar = (float) Math.sqrt (fX * fX + fY * fY);
                     textAnswer.setText(String.valueOf(fSvar));
                 }
                 catch (NumberFormatException e) {
@@ -178,7 +178,7 @@ public class MainActivity extends AppCompatActivity {
                 String sY = editText1.getText().toString();
                 try {
                     float fX = Float.parseFloat(sX);
-                    float fSvar = 100; //Byt ut 100 mot uträkning här
+                    float fSvar =  (float) (Math.PI * (fX/2) * (fX/2));
                     textAnswer.setText(String.valueOf(fSvar));
                 }
                 catch (NumberFormatException e) {
@@ -197,7 +197,7 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     float fX = Float.parseFloat(sX);
                     float fY = Float.parseFloat(sY);
-                    float fSvar = 100; //Byt ut 100 mot uträkning här
+                    float fSvar = (float) (Math.PI * (fX/2)* (fX/2) * fY);
                     textAnswer.setText(String.valueOf(fSvar));
                 }
                 catch (NumberFormatException e) {
@@ -206,8 +206,80 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+    //    private void calculate() {
+        //       String input1Str = editText0.getText().toString();
+        //      String input2Str = editText1.getText().toString();
+
+        //        if (input1Str.isEmpty() || input2Str.isEmpty()) {
+        //          textAnswer.setText("Fyll i båda fälten.");
+        //         return;
+        //      }
+
+        //    try {
+        //      double input1 = Double.parseDouble(input1Str);
+        //        double input2 = Double.parseDouble(input2Str);
+        //       double result = 0;
+
+        //       String operator = operatorSpinner.getSelectedItem().toString(); // Lägg till en spinner för att välja operation
+
+        //      switch (operator) {
+        //          case "Addition":
+        //              result = input1 + input2;
+        //              break;
+        //          case "Subtraktion":
+        //              result = input1 - input2;
+        //             break;
+        //         case "Division":
+        //            if (input2 != 0) {
+        //              result = input1 / input2;
+        //             } else {
+        //                textAnswer.setText("Kan inte dividera med noll.");
+        //              return;
+                        }
+    //         break;
+    //        case "multiplication":
+    //         result = input1 * input2;
+    //          break;
+    //     case "root":
+    //           if (input2 >= 0) {
+    //                result = Math.sqrt(input2);
+    //             } else {
+        //                textAnswer.setText("Kan inte ta roten ur ett negativt tal.");
+    //                return;
+    //             }
+//              break;
+    //            case "Procent":
+                            //               result = (input1 * input2) / 100;
+    //              break;
+    //          case "Pythagoras sats":
+    //                 result = Math.sqrt((input1 * input1) + (input2 * input2));
+    //                  break;
+    //              case "Cirkelns area":
+    //                  result = Math.PI * input1 * input1;
+    //                  break;
+    //              case "Cylinderns volym":
+    //                  result = Math.PI * input1 * input1 * input2;
+    //                  break;
+    //              default:
+    //                   textAnswer.setText("Ogiltig operation vald.");
+    //                  return;
+                }
+
+                // Visa resultatet
+//       textAnswer.setText("Resultat: " + result);
+//      } catch (NumberFormatException e) {
+//          textAnswer.setText("Felaktig inmatning. Ange giltiga nummer.");
+//           }
+//       }
+
+//   }
 
 
-    }
-}
+//}
+
+
+
+
+// }
+//}
 
