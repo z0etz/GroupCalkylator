@@ -122,7 +122,6 @@ public class MainActivity extends AppCompatActivity {
                 String sY = editText1.getText().toString();
                 try {
                     float fX = Float.parseFloat(sX);
-                    float fY = Float.parseFloat(sY);
                     float fSvar = 100; //Byt ut 100 mot uträkning här
                     textAnswer.setText(String.valueOf(fSvar));
                 }
@@ -179,7 +178,6 @@ public class MainActivity extends AppCompatActivity {
                 String sY = editText1.getText().toString();
                 try {
                     float fX = Float.parseFloat(sX);
-                    float fY = Float.parseFloat(sY);
                     float fSvar = 100; //Byt ut 100 mot uträkning här
                     textAnswer.setText(String.valueOf(fSvar));
                 }
