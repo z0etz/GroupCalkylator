@@ -13,6 +13,7 @@
         android:layout_margin="@dimen/margin_medium"
         android:orientation="vertical">
 
+        <!-- Titel -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,12 +27,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
+        <!-- Inmatnings fält X -->
+
     <EditText
         android:id="@+id/editText0"
         android:hint="@string/x"
         android:layout_margin="@dimen/margin_small"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
+        <!-- Inmatnings fält X -->
 
         <EditText
             android:id="@+id/editText1"
@@ -44,6 +49,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
+        <!-- Knappar för uträkningar -->
+
         <Button
             android:id="@+id/buttonPlus"
             android:text="@string/plus"
@@ -74,6 +82,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
+            <!-- Knappar för uträkningar -->
+
             <Button
                 android:id="@+id/buttonDivision"
                 android:text="@string/division"
@@ -101,6 +112,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
+            <!-- Knappar för uträkningar -->
+
             <Button
                 android:id="@+id/buttonPhytagoras"
                 android:text="@string/phytagoras"
@@ -126,6 +140,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"/>
         </LinearLayout>
+
+        <!-- TextView för resultatet -->
 
         <TextView
             android:id="@+id/textAnswer"
